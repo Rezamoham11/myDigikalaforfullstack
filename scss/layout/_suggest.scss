@@ -1,0 +1,32 @@
+/** @format */
+
+.suggest {
+  &__content {
+    @include Responsive(tablet) {
+      border-left: none !important;
+      border-rights: none !important;
+      border-radius: none !important;
+      cursor: grab;
+      overflow-x: auto;
+    }
+    &-item {
+      cursor: grab;
+      min-width: 18rem;
+    }
+  }
+  &__item {
+    width: 10.1rem;
+    height: 10.1rem;
+    background-color: $shadow-gray;
+    padding: 1.5rem;
+    border-radius: 100%;
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__image {
+    max-width: 100%;
+    height: auto;
+  }
+}

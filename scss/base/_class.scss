@@ -1,0 +1,57 @@
+/** @format */
+
+//--Width Project--
+.container2xl {
+  width: 80vw;
+  margin: auto;
+  @include Responsive(tablet) {
+    width: 98vw;
+  }
+}
+//----Flex Class------
+.flex-center {
+  @include centerize-flex();
+}
+
+.flex-between {
+  @include space-between-flex();
+}
+.flex-around {
+  @include space-around-flex();
+}
+
+//---Position Class-----
+.position-center {
+  @include position-center();
+}
+//-----Font Size-----
+.fs-1 {
+  font-size: $fs-1 !important;
+}
+.fs-2 {
+  font-size: $fs-2 !important;
+}
+.fs-3 {
+  font-size: $fs-3 !important;
+}
+.fs-4 {
+  font-size: $fs-4 !important;
+}
+.fs-5 {
+  font-size: $fs-5 !important;
+}
+
+// .ellipsis-1
+// {
+//     @include LineBrack(1);
+// }
+
+// .ellipsis-2
+// {
+//     @include LineBrack(2);
+// }
+
+// .ellipsis-3
+// {
+//     @include LineBrack(3);
+// }

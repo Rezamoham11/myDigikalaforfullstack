@@ -1,0 +1,25 @@
+/** @format */
+
+.digiclub {
+  &__content {
+    @include Responsive(tablet) {
+      border-radius: 0% !important;
+    }
+    &-row {
+    }
+    &-item1 {
+      &-pic {
+      }
+      &-img {
+      }
+    }
+
+    &item2 {
+      @include Responsive(tablet) {
+        @include centerize-flex();
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

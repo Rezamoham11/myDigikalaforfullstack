@@ -1,0 +1,22 @@
+/** @format */
+
+.brand {
+  &__items {
+  }
+  &__item {
+    overflow: hidden;
+
+    &-pic {
+      max-width: 5rem;
+      @include Responsive(tabletL) {
+        max-width: 9rem;
+      }
+    }
+    &-more {
+      max-width: 5rem;
+      @include Responsive(tablet) {
+        max-width: 8rem;
+      }
+    }
+  }
+}

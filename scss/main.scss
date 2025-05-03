@@ -1,0 +1,37 @@
+/** @format */
+
+//!-----Utilites----
+@import "../scss/utilites/function";
+@import "../scss/utilites/varable";
+@import "../scss/utilites/mixin";
+
+//!----Bootstrap
+@import "../scss/custom";
+//-----Base------
+@import "../scss/base/typography";
+@import "../scss/base/defulte";
+@import "../scss/base/class";
+//-----vendor
+
+//----themes----
+
+//----Layout----
+@import "../scss/layout/header";
+@import "../scss/layout/story";
+@import "../scss/layout/slider";
+@import "../scss/layout/brand";
+@import "../scss/layout/scroll";
+@import "../scss/layout/offers";
+@import "../scss/layout/supermarket";
+@import "../scss/layout/category";
+@import "../scss/layout/popular";
+@import "../scss/layout/suggest";
+@import "../scss/layout/digiplus";
+@import "../scss/layout/digiclub";
+@import "../scss/layout/accessory";
+@import "../scss/layout/footer";
+//----Component----
+//----pages----
+@import "../scss/pages/home";
+@import "../scss/pages/product";
+@import "../scss/pages/search";

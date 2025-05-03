@@ -1,0 +1,36 @@
+/** @format */
+
+.supermarket {
+  &__content {
+    &-left {
+      @include Responsive(tablet) {
+        width: 100% !important;
+      }
+    }
+    width: 10.1rem;
+    &-offer {
+      @include Responsive(tablet) {
+        display: none;
+      }
+    }
+    &-item {
+      @include Responsive(tablet) {
+        @include centerize-flex();
+        position: relative;
+      }
+      &-rounded {
+        @include Responsive(tabletL) {
+          display: none;
+        }
+      }
+      &-pic {
+        @include Responsive(tablet) {
+          width: 80% !important;
+        }
+      }
+    }
+
+    &-right {
+    }
+  }
+}

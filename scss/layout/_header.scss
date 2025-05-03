@@ -1,0 +1,35 @@
+/** @format */
+
+.header {
+  box-shadow: 3px 3px $divider-light, -1rem 0 0.1rem $text-primary;
+  &__banner {
+    @include Responsive(tabletL) {
+      height: 3.5rem;
+    }
+    &-img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__search {
+    @include Responsive(tablet) {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-item {
+      @include Responsive(tablet) {
+        width: 75% !important;
+      }
+    }
+    &-input {
+      @include Responsive(tablet) {
+        width: 100% !important;
+      }
+    }
+  }
+  &__navbar {
+    &-right {
+    }
+  }
+}

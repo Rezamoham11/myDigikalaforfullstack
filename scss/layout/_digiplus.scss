@@ -1,0 +1,22 @@
+/** @format */
+.digiplus {
+  &__content {
+    @include Responsive(tablet) {
+      border-radius: 0% !important;
+    }
+    &-item {
+      @include Responsive(tablet) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    &-img {
+      @include Responsive(phoneL) {
+        position: static;
+        left: 0%;
+        max-width: 50%;
+        margin-top: 1rem;
+      }
+    }
+  }
+}

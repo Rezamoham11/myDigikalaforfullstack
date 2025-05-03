@@ -1,0 +1,40 @@
+/** @format */
+
+* {
+  direction: rtl;
+}
+ul,
+ol {
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+  @include Responsive(phone) {
+    font-size: 43.75%;
+  }
+  @include Responsive(phoneL) {
+    font-size: 50%;
+  }
+  @include Responsive(tablet) {
+    font-size: 55.25%;
+  }
+  @include Responsive(tabletL) {
+    font-size: 58.5%;
+  }
+}
+:root {
+  --bs-body-bg: #ffff;
+}
+body {
+  --bs-body-font-family: IranSansWeb, var(--bs-font-sans-serif);
+  --bs-body-font-size: 1.6rem;
+  --bs-body-font-weight: 600;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #101010;
+  --bs-body-color-rgb: 33, 37, 41;
+}

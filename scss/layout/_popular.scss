@@ -1,0 +1,18 @@
+/** @format */
+
+.popular {
+  &__content {
+    cursor: grab;
+    @include Responsive(tablet) {
+      border: none !important;
+    }
+  }
+  &-text {
+    @include Responsive(tablet) {
+      position: static;
+    }
+  }
+  &-item {
+    min-width: 40rem;
+  }
+}

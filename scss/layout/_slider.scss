@@ -1,0 +1,41 @@
+/** @format */
+
+.slider {
+  max-height: 40rem;
+  &__pagination {
+    position: absolute;
+    bottom: 7rem;
+    right: 7rem;
+    @include Responsive(tablet) {
+      display: none;
+    }
+  }
+  &__pic {
+    @include Responsive(tablet) {
+      min-height: 286px;
+      min-width: auto;
+      object-fit: cover;
+    }
+  }
+  &__navbar {
+    position: absolute;
+    bottom: 3rem;
+    right: 7rem;
+    width: 10rem;
+    cursor: grab;
+    @include Responsive(tablet) {
+      display: none;
+      cursor: grab;
+    }
+
+    &-rl {
+      width: 3rem;
+      height: 3rem;
+      border: 1px solid $divider-light;
+      &::after {
+        content: "";
+        font-size: $fs-4;
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+/** @format */
+
+// 1. Base Color Variables (Two-word naming convention)
+$text-primary: #373636;
+$button-red: #ef394e;
+$link-turquoise: #19bfd3;
+$bg-white: #ffffff;
+$divider-light: #f0f0f1;
+$shadow-gray: #e0e0e2;
+$text-secondary: #a1a3a8;
+$header-charcoal: #6f6f77;
+$bg-secondary: #f9fafb;
+$form-slate: #3e4a59;
+$status-success: #66bb6a;
+$alert-orange: #ff7043;
+$tag-discount: #fdd835;
+$label-magenta: #d81b60;
+$promo-purple: #9c27b0;
+$state-active: #2196f3;
+$icon-cyan: #00bcd4;
+$button-lime: #8bc34a;
+$text-disabled: #607d8b;
+$element-black: #000000;
+$text-gray: gray;
+$supermarket__offer: #029a49;
+$digikala__brands: #f0f0f1;
+
+
+// 2. Theme Color Mapping
+$theme-colors: (
+  "primary": $button-red,
+  "secondary": $link-turquoise,
+  "success": $status-success,
+  "info": $state-active,
+  "warning": $alert-orange,
+  "danger": $label-magenta,
+  "light": $divider-light,
+  "dark": $header-charcoal,
+  "discount": $tag-discount,
+  "promotion": $promo-purple,
+  "disabled": $text-disabled,
+  "shop": $text-secondary,
+  "offer": $supermarket__offer,
+  "star": $alert-orange,
+  "iconn": $icon-cyan,
+  "digiclub": $state-active,
+  "staricon": $tag-discount,
+  "graylight": $shadow-gray,
+  "application": $form-slate,
+  "digikalabrands": $digikala__brands,
+  "line": $bg-secondary,
+);
+// 3. Merge with Bootstrap's Defaults (اختیاری)
+// @import "~bootstrap/scss/functions";
+// @import "~bootstrap/scss/variables";
+// $theme-colors: map-merge($theme-colors, $theme-colors); // Override تمام رنگها
+//----FontSize Varable
+// $font-size-sm:2rem !important;
+// $font-size-md:4rem !important;
+// $font-size-lg:6rem !important;
+$fs-1: 2.5rem;
+$fs-2: 2rem;
+$fs-3: 1.5rem;
+$fs-4: 1rem;
+$fs-5: 0.5rem;

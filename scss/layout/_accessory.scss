@@ -1,0 +1,11 @@
+/** @format */
+
+// /** @format */
+
+.accessory {
+  &__content {
+    @include Responsive(tablet) {
+      border: none !important;
+    }
+  }
+}

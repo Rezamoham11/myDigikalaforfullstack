@@ -1,0 +1,12 @@
+/** @format */
+
+.category {
+  &__item {
+    min-width: 20rem;
+    &-img {
+      min-width: 8rem;
+      max-width: 9rem;
+      height: auto;
+    }
+  }
+}

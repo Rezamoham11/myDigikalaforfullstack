@@ -1,0 +1,7 @@
+/** @format */
+
+.footer {
+  @include Responsive(tablet) {
+    display: nones;
+  }
+}

@@ -1,0 +1,11 @@
+/** @format */
+
+.phoneNav {
+  &__content {
+    &-click {
+      @include Responsive(tablet) {
+        cursor: pointer;
+      }s
+    }
+  }
+}

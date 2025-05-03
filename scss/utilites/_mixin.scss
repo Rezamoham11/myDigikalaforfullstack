@@ -1,0 +1,78 @@
+/** @format */
+
+@mixin centerize-flex($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin space-between-flex($align: center, $justify: space-between) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin space-around-flex($align: center, $justify: space-around) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+// @mixin lineBreak($line: 2) {
+//   display: -webkit-box;
+//   -webkit-line-clamp: $line;
+//   -webkit-box-orient: vertical;
+//   overflow: hidden;
+// }
+
+/*
+!0-576px=Phone
+!576px-768px=Phone Landscape
+!768px-992px=Tablet Portrait
+!992px-1200px=Tablet Landscape
+!1200px - 1800px=laptop
+!1800px >=Big Desktop
+
+*/
+@mixin Responsive($breakpoint) {
+  // *phone braek points-----576px=36em
+  @if $breakpoint==phone {
+    @media screen and (max-width: 36em) {
+      @content;
+    }
+  }
+  // *phoneL braek points------768px=48em
+  @if $breakpoint==phoneL {
+    @media screen and (max-width: 48em) {
+      @content;
+    }
+  }
+  // *tablet braek points-----992px=62em
+  @if $breakpoint==tablet {
+    @media screen and (max-width: 62em) {
+      @content;
+    }
+  }
+
+  // *tabletL braek points-----1200px=75em
+  @if $breakpoint==tabletL {
+    @media screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  // *laptop braek points-----1200px>
+  @if $breakpoint==tabletL {
+    @media screen and (max-width: 112.5em) {
+      @content;
+    }
+  }
+}
