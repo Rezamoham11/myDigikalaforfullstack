@@ -3,7 +3,7 @@
 ///////////swiper slider1 Story
 var swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
-  direction: getDirection(),
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -137,7 +137,7 @@ var swiper = new Swiper(".mySwiper3", {
 /////////////////////////////////////////////////////////////////////////////////////////////
 var swiper = new Swiper(".swiper5", {
   slidesPerView: "auto",
-  direction: getDirection(),
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -158,7 +158,7 @@ function getDirection() {
 /////////////////////////////////////////////////////////////////////////////////////////////
 var swiper = new Swiper(".swiper6", {
   slidesPerView: "auto",
-  direction: getDirection(),
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -179,7 +179,7 @@ function getDirection() {
 /////////////////////////////
 var swiper = new Swiper(".swiper10", {
   slidesPerView: "auto",
-  direction: getDirection(),
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
